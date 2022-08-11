@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos da Lu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/bolo.png" alt="Logo Bolos da Lu" id="logo"></a>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="bolo-saborizado.html" class="active">Bolos caseiros</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="tel:+558533430202" target="_blank">(85) 3343-0202</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="compra">
+        <img class="imagem" src="img/bolo-de-cenoura.jpg" alt="Bolo de cenoura com cobertura chocolate">
+        <form>
+            <h1>Bolo Saborizado</h1>
+            <p>Tamanho:</p>
+            <input type="radio" class="radio" name="tamanhos" id="medio" checked>
+            <label for="medio">Médio</label>
+            <input type="radio" class="radio" name="tamanhos" id="grande">
+            <label for="grande">Grande</label>
+
+            <p>Sabores:</p>
+            <div id="sabores">
+                <div id="esquerda">
+                    <div class="sabor">
+                        <input type="radio" class="radio" name="sabores" id="laranja">
+                        <label for="laranja">Laranja</label>
+                    </div>
+                    <div class="sabor">
+                        <input type="radio" class="radio" name="sabores" id="cenoura" checked>
+                        <label for="cenoura">Cenoura</label>
+                    </div>
+                </div>
+                <div id="direita">
+                    <div class="sabor">
+                        <input type="radio" class="radio" name="sabores" id="maracuja">
+                        <label for="maracuja">Maracujá</label>
+                    </div>
+                    <div class="sabor">
+                        <input type="radio" class="radio" name="sabores" id="limao">
+                        <label for="limao">Limão</label>
+                    </div>
+                </div>
+            </div>
+
+            <input type="checkbox" id="com-cobertura" name="com-cobertura" checked>
+            <label for="com-cobertura">Com cobertura</label>
+
+            <div id="quantidade">
+                <input type="button" id="menos" value="-">
+                0
+                <input type="button" id="mais" value="+">
+            </div>
+            <p id="preco">R$ 32,00</p>
+        </form>
+    </div>
+</body>
+</html>

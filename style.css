@@ -1,0 +1,205 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display&display=swap');
+
+/* Header */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 0px 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 50px;
+    align-items: center;
+}
+
+#logo {
+    width: 35px;
+    height: 35px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a.active {
+    color: #FF3C95;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #FF3C95;
+}
+
+#titulo {
+    font-family: 'Playfair Display';
+    font-size: 70px;
+    font-weight: 400;
+    margin: 230px 0 auto;
+}
+
+.inicio {
+    height: 90vh;
+    background-color: purple;
+    background: no-repeat right bottom/520px url('img/fatia-de-bolo.png');
+}
+
+.conteudo-header {
+    max-width: 350px;
+    margin: 0 50px;
+}
+
+/* Bolos caseiros */
+section {
+    background-color: #FFF4F4;
+    padding: 50px;
+}
+
+h1 {
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.bolos {
+    background-color: white;
+    width: 280px;
+    height: 235px;
+    border-radius: 15px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    justify-content: center;
+    box-shadow: 1px 5px 15px rgba(100,77,16,0.2);
+}
+
+.bolos:hover {
+    font-weight: 700;
+}
+
+.bolos-img {
+    width: 280px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.legenda-img {
+    text-align: center;
+}
+
+.conteudo-section {
+    display: flex;
+}
+
+/* Footer Sobre */
+footer {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+iframe {
+    margin-left: 90px;
+}
+
+/* Imagem bolo grande */
+.imagem {
+    width: 692px;
+}
+
+/* Formulário com as opções de tamanho de bolo, massa, cobertura e sabores */
+.compra {
+    display: flex;
+    margin-top: 100px;
+}
+
+form {
+    margin-left: 100px;
+}
+
+.radio {
+    appearance: none;
+    margin: 0;
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+
+.radio:checked + label {
+    font-weight: 700;
+}
+
+label {
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.escolhas, #sabores {
+    display: flex;
+}
+
+input[type=checkbox]{
+    margin-top: 10px;
+}
+
+.massa, .cobertura, .sabor {
+    margin: 10px 0;
+}
+
+form p {
+    margin-top: 35px;
+}
+
+/* Botões para determinar quantidade de bolos */
+
+form #quantidade {
+    margin-top: 50px;
+}
+
+form #menos, #mais {
+    background-color: white;
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+form #menos {
+    border: 1px solid rgba(175, 175, 175, 0.801);
+    margin-right: 10px;
+}
+
+form #mais {
+    border: 1px solid rgba(0, 0, 0, 1);
+    margin-left: 10px;
+}
+
+/* Preço do bolo */
+
+form #preco {
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+    font-size: 30px;
+    font-weight: 700;
+}

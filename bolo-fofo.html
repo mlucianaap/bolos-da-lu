@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos da Lu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/bolo.png" alt="Logo Bolos da Lu" id="logo"></a>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="bolo-fofo.html" class="active">Bolos caseiros</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="tel:+558533430202" target="_blank">(85) 3343-0202</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="compra">
+        <img class="imagem" src="img/bolo-simples.jpg" alt="Bolo fofo">
+        <form>
+            <h1>Bolo Fofo</h1>
+            <p>Tamanho:</p>
+            <input type="radio" class="radio" name="tamanhos" id="medio">
+            <label for="medio">Médio</label>
+            <input type="radio" class="radio" name="tamanhos" id="grande" checked>
+            <label for="grande">Grande</label>
+
+            <p>Massa:</p>
+            <div class="massa">
+                <input type="radio" class="radio" name="massas" id="amanteigada" checked>
+                <label for="amanteigada">Amanteigada</label>
+            </div>
+            <div class="massa">
+                <input type="radio" class="radio" name="massas" id="chocolate">
+                <label for="chocolate">Chocolate</label>
+            </div>
+            <div class="massa">
+                <input type="radio" class="radio" name="massas" id="formigueiro">
+                <label for="formigueiro">Formigueiro</label>
+            </div>
+
+            <div id="quantidade">
+                <input type="button" id="menos" value="-">
+                0
+                <input type="button" id="mais" value="+">
+            </div>
+            <p id="preco">R$ 42,00</p>
+        </form>
+    </div>
+</body>
+</html>
